@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Registrasion form</title>
+<body><h2>Registartion form</h2>
+<form id="RegistrationForm" method="POST" action="process_registration.php">
+    <label for="id">ID</label>
+    <input type="text" id="id" name="id" required>
+    <span class="error" id="idError"></span><br><br>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" required>
+    <span class="error" id="fnameError"></span><br><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" required>
+    <span class="error" id="lnameError"></span><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="emailError"></span><br><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error" id="passwordError"></span><br><br>
+
+    <label for="conform_password">Password</label>
+    <input type="password" id="conform_password" name="conform_password" required>
+    <span class="error" id="conform_passwordError"></span><br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<script src="validate.js"></script>
+</body>
+</html>
